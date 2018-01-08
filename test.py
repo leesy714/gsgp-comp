@@ -11,7 +11,7 @@ import numpy as np
 from nn_model import *
 from tree import *
 
-dataset = MNIST(root='./mnist/',transform=transforms.Compose([transforms.ToTensor()]))
+dataset = MNIST(root='./mnist/',transform=transforms.Compose([transforms.ToTensor()]), download=True)
 
 
 train_loader = torch.utils.data.DataLoader(
